@@ -1,0 +1,25 @@
+ReturnMe
+
+.class public auto ansi abstract sealed AsyncPlayground.Ignore
+    extends [mscorlib]System.Object
+{
+    .custom instance void [FSharp.Core]Microsoft.FSharp.Core.CompilationMappingAttribute::.ctor(valuetype [FSharp.Core]Microsoft.FSharp.Core.SourceConstructFlags) = (
+        01 00 07 00 00 00 00 00
+    )
+    .method public static class [FSharp.Core]Microsoft.FSharp.Control.FSharpAsync`1<class [FSharp.Core]Microsoft.FSharp.Core.Unit> ignore<a, b> (
+            !!a x,
+            !!b y
+        ) cil managed 
+    {
+        .custom instance void [FSharp.Core]Microsoft.FSharp.Core.CompilationArgumentCountsAttribute::.ctor(int32[]) = (
+            01 00 02 00 00 00 01 00 00 00 01 00 00 00 00 00
+        )
+        IL_0000: nop
+        IL_0001: ldarg.0
+        IL_0002: ldarg.1
+        IL_0003: call class [FSharp.Core]Microsoft.FSharp.Control.FSharpAsync`1<class [mscorlib]System.Tuple`2<!!1, !!0>> AsyncPlayground.ReturnMe::returnMe<!!a, !!b>(!!0,  !!1)
+        IL_0008: tail.
+        IL_000a: call class [FSharp.Core]Microsoft.FSharp.Control.FSharpAsync`1<class [FSharp.Core]Microsoft.FSharp.Core.Unit> [FSharp.Core]Microsoft.FSharp.Control.FSharpAsync::Ignore<class [mscorlib]System.Tuple`2<!!b, !!a>>(class [FSharp.Core]Microsoft.FSharp.Control.FSharpAsync`1<class [mscorlib]System.Tuple`2<!!1, !!0>>)
+        IL_000f: ret
+    }
+}
